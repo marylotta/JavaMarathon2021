@@ -15,17 +15,30 @@ public class Task1 {
             if (s.equals("Stop")) {
                 break;
             }
-            if (s.equals("Москва") || s.equals("Владивосток") || s.equals("Ростов")) {
-                System.out.println("Россия");
-            } else if (s.equals("Рим") || s.equals("Милан") || s.equals("Турин")) {
-                System.out.println("Италия");
-            } else if (s.equals("Ливерпуль") || s.equals("Манчестер") || s.equals("Лондон")) {
-                System.out.println("Англия");
-            } else if (s.equals("Берлин") || s.equals("Мюнхен") || s.equals("Кёльн")) {
-                System.out.println("Германия");
-            } else {
-                System.out.println("Неизвестная страна");
+            switch(s){
+                case "Москва":
+                case "Владивосток":
+                case "Ростов":
+                    System.out.println("Россия");
+                    break;
+                case "Рим":
+                case "Милан":
+                case "Турин":
+                    System.out.println("Италия");
+                    break;
+                case "Ливерпуль":
+                case "Манчестер":
+                case "Лондон":
+                    System.out.println("Англия");
+                    break;
+                case "Берлин":
+                case "Мюнхен":
+                case "Кёльн":
+                    System.out.println("Германия");
+                    break;
+                default: System.out.println("Неизвестная страна");
             }
+            
         }
 
     }
