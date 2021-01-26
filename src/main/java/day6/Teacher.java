@@ -26,13 +26,13 @@ public class Teacher {
 
         switch (x) {
             case 2:
-                s = "неудовлетворительно";
+               s = "неудовлетворительно";
                 break;
             case 3:
                 s = "удовлетворительно";
                 break;
             case 4:
-                s = "хорошо";
+                 s = "хорошо";
                 break;
             case 5:
                 s = "отлично";
