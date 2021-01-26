@@ -22,9 +22,11 @@ public class Player {
     }
 
     public void run() {
-        stamina -= 1;
-        if (stamina == 0) {
-            countPlayers--;
+        if (stamina > MIN_STAMINA) {
+            stamina -= 1;
+            if (stamina == MIN_STAMINA) {
+                countPlayers--;
+            }
         }
     }
 

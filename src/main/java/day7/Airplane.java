@@ -23,11 +23,13 @@ public class Airplane {
         return fuel;
     }
 
-    public static void lengthMax(Airplane air1, Airplane air2) {
+    public static void compareAirplanes(Airplane air1, Airplane air2) {
         if (air1.length > air2.length) {
-            System.out.println("Cамолет " + air1.producer + " длинее");
-        } else {
-            System.out.println("Cамолет " + air2.producer + " длинее");
+            System.out.println("Первый самолет длиннее");
+        } else if(air1.length == air2.length){
+            System.out.println("Длины самолетов равны");
+        }else  {
+            System.out.println("Второй самолет длиннее");
         }
 
     }
